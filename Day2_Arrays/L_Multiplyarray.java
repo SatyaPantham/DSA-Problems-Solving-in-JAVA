@@ -1,0 +1,28 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class L_Multiplyarray {
+
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+
+        for (int i = 0; i < T; i++) {
+
+            int n = sc.nextInt();
+            long mul = 1;
+            for (int j = 0; j < n; j++) {
+
+                int arr[] = new int[n];
+                arr[j] = sc.nextInt();
+                mul = mul * arr[j];
+
+            }
+
+            System.out.println(mul);
+        }
+
+    }
+
+}
